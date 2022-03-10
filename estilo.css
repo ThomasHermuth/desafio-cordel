@@ -31,7 +31,7 @@ header {
 
 header h1 {
     font-family: var(--fonte-header);
-    font-size: 3rem;
+    font-size: 5vw;
     font-weight: bold;
     padding: 50px;
     padding-bottom: 10px;
@@ -40,7 +40,7 @@ header h1 {
 header p a {
     color: white;
     font-family: var(--fonte01);
-    font-size: 1rem;
+    font-size: 2vw;
     text-decoration: none;
     font-weight: bold;
     
@@ -52,7 +52,7 @@ header a:hover, footer a:hover {
 
 main p {
     font-family: var(--fonte-paragrafo);
-    font-size: 2em;
+    font-size: 2vw;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
     position: relative;
     left: 5%;
