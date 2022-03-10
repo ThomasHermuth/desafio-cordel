@@ -11,101 +11,80 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 2vw;
 }
-
-/* 
-Arrumar responsividade de fonte e imagens;
-Arrumar posicionamento das imagens e dos parágrafos.
-Arrumar Título do header e a fonte do "Por".
-
-
-*/
-
 
 header {
     background: black;
     color: white;
     text-align: center;
-    height: 225px;
 }
 
-header h1 {
+header > h1 {
     font-family: var(--fonte-header);
-    font-size: 5vw;
-    font-weight: bold;
-    padding: 50px;
-    padding-bottom: 10px;
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 10vw;;
 }
 
-header p a {
-    color: white;
+header > p {
     font-family: var(--fonte01);
-    font-size: 2vw;
-    text-decoration: none;
-    font-weight: bold;
-    
+    padding-bottom: 50px;
 }
 
-header a:hover, footer a:hover {
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
-main p {
-    font-family: var(--fonte-paragrafo);
-    font-size: 2vw;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
-    position: relative;
-    left: 5%;
-    top: 10%;
-}
-
-.fundo {
-    display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.514);
-}
-
-p.fundo {
-    color: white;
-}
-
 section {
-    height: 525px;
+    font-family: var(--fonte-paragrafo);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 2.5vw;
 }
 
-.sombra {
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.315);
+section.normal {
+    background-color: white;
+    color: black;
 }
 
-section.imagem01 {
+section.imagem {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.315);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.185);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.514);
+}
+
+section#img01 {
     background-image: url('imagens/background001.jpg');
-    background-position: center left;
-    background-attachment: fixed;
-    background-size: cover;
+    background-position: right center;  
 }
 
-section.imagem02 {
+section#img02 {
     background-image: url('imagens/background002.jpg');
-    background-attachment: fixed;
-    background-size: cover;
+    background-position: right center;
 }
 
-footer, footer a {
-    height: 60px;
-    background: black;
-}
-
-footer p {
+footer {
+    background-color: black;
     color: white;
     font-family: var(--fonte01);
     text-align: center;
-    text-decoration: none;
-    padding: 20px;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-family: var(--fonte01);
+    padding: 15px;
 }
