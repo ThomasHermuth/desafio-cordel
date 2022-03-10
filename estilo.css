@@ -31,7 +31,7 @@ header {
 
 header h1 {
     font-family: var(--fonte-header);
-    font-size: 95px;
+    font-size: 3rem;
     font-weight: bold;
     padding: 50px;
     padding-bottom: 10px;
@@ -40,7 +40,7 @@ header h1 {
 header p a {
     color: white;
     font-family: var(--fonte01);
-    font-size: 1em;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
     
