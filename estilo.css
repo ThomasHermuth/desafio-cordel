@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
-
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-header: 'Passion One', cursive;
     --fonte-paragrafo: 'Sriracha', cursive;
 }
@@ -13,55 +13,99 @@
     padding: 0px;
 }
 
+/* 
+Arrumar responsividade de fonte e imagens;
+Arrumar posicionamento das imagens e dos parágrafos.
+Arrumar Título do header e a fonte do "Por".
+
+
+*/
+
+
 header {
-    background-color: black;
+    background: black;
     color: white;
     text-align: center;
-    height: 190px;
-    font-weight: lighter;
+    height: 225px;
 }
 
 header h1 {
     font-family: var(--fonte-header);
-    padding-top: 40px;
-    font-size: 2em;
+    font-size: 95px;
+    font-weight: bold;
+    padding: 50px;
+    padding-bottom: 10px;
 }
 
-span.maior {
-    font-size: 2.1em;
-}
-
-header p,a {
-    font-family: cursive; /* arrumar fonte */
+header p a {
     color: white;
-    text-decoration: none;
+    font-family: var(--fonte01);
     font-size: 1em;
-    padding-bottom: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    font-family: var(--fonte-paragrafo);
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+
+.fundo {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+p.fundo {
+    color: white;
 }
 
 section {
-    height: 500px;
+    height: 525px;
 }
 
-section p {
-    font-family: var(--fonte-paragrafo);
-    padding: 50px 20px;
-    text-align: left;
+.sombra {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.315);
 }
 
-section#primeiro {
-    background-color: white;
-}
-
-section#segundo {
-    background: black center center url('imagens/background001.jpg') fixed;
+section.imagem01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: center left;
+    background-attachment: fixed;
     background-size: cover;
-    width: 100%;
 }
 
-section.fundo {
+section.imagem02 {
+    background-image: url('imagens/background002.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer, footer a {
+    height: 60px;
+    background: black;
+}
+
+footer p {
     color: white;
-    background-color: rgba(0, 0, 0, 0.192);
-    width: 250px;
-    
+    font-family: var(--fonte01);
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: var(--fonte01);
 }
